@@ -1,0 +1,11 @@
+.shoes_box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+/*
+    width: 800px;
+    height: 400px;
+    background-color: #f5f5f5;
+*/
+}

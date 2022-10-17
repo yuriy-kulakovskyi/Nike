@@ -1,0 +1,40 @@
+.Card img {
+    height: 300px;
+/*    margin-left: 100px;*/
+}
+
+.Card {
+    width: 606.59px;
+    height: 272.94px;
+    background-color: rgba(239, 239, 239);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: row;
+    background: #EFEFEF;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+}
+
+.Card_h2{
+    padding-left: 50px;
+    width: 200px;
+}
+
+h2{
+    margin-left: 10px;
+}
+
+.buy_now{
+    width: 150px;
+    border-radius: 10px;
+    height: 50px;
+    background-color: #000;
+    color: #fff;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
