@@ -1,0 +1,70 @@
+$black:#000;
+$white:#fff;
+$grey:#F5F5F5;
+$darkgrey:#C6C6C6;
+$fontFam:'Montserrat';
+$fontWeight400:400;
+$fontWeight700:700;
+$fontNormal:normal;
+
+.Main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    padding: 50px 30px;
+    .main__row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        h3{
+            color:$black;
+            font-size: 25px;
+            font-family: $fontFam;
+            font-weight: $fontWeight700;
+            font-style: normal;
+        }
+        .btns__main{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            .left__btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background-color: $grey;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+            .right__btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                background-color: $darkgrey;
+                border-radius: 50%;
+            }
+        }
+    }
+    .sneakers__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width:957px) {
+    .Main{
+        height:190vh;
+            .sneakers__container{
+                flex-direction: column;
+            }
+            
+        
+    }
+}

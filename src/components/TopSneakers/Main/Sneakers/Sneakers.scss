@@ -1,0 +1,276 @@
+$lightgrey:#EFEFEF;
+$black:#000;
+$fontFam:'Montserrat';
+$fontWeight400:400;
+$fontWeight700:700;
+$fontWeight900:900;
+$fontNormal:normal;
+$white:#fff;
+$fontItalic:italic;
+.Sneakers{
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    .sneakers__row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        .card__sneakers{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            width: 350px;
+            height: 540px;
+            background-color: $lightgrey;
+            box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 18px;
+            .card__main{
+                z-index: 4;
+                .card__pic{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 60vh;
+                    img{
+                        width: 300px;
+                        height: 300px;
+                        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
+                        
+                    }
+                    
+                }
+                .sneakers__info{
+                    display: flex;
+                    flex-direction: column;
+                    h4{
+                        font-weight: $fontWeight700;
+                        color: $black;
+                        font-size: 25px;
+                        line-height: 47px ;
+                        margin-bottom: 12px;
+                        font-family: $fontFam;
+                        font-style: $fontNormal;
+                    }
+                    .card__row{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        .price__sneakers{
+                            font-weight: $fontWeight400;
+                            font-family: $fontFam;
+                            font-style: $fontNormal;
+                            color: $black;
+                            line-height: 23px;
+                            font-size:20px;
+                        }
+                        .btn{
+                            width: 49px;
+                            height: 49px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: $white;
+                            border-radius: 50%;
+                        }
+                    }
+            }
+        
+            }
+            .card__add{
+                bottom: -70px;
+                position: absolute;
+                p{
+
+                    transform: matrix(0, 1, -1, 0, 0, 0);
+                    font-family: $fontFam;
+                    font-weight: $fontWeight900;
+                    font-size: 120px;
+                    color: rgba(0, 0, 0, 0.1);
+                    font-style: $fontItalic;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1250px){
+    .Sneakers{
+        .sneakers__row{
+            .card__sneakers{
+                width: 330px;
+                padding: 15px 10px;
+               .card__pic{
+                height: 45vh;
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+               }
+            }
+            .sneakers__info{
+                h4{
+                    margin-left: 10px;
+                    font-size: 21px;
+                    line-height: 40px;
+                }
+                .card__row{
+                    width: 300px;
+                    .price__sneakers{
+                        font-size: 18px;
+                        line-height: 20px;
+                        margin-left: 10px;
+                    }
+                    .btn{
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
+            .card__add{
+                bottom: -65px;
+                
+                p{
+                    font-size: 100px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1127px){
+    .Sneakers{
+        .sneakers__row{
+            .card__sneakers{
+                width: 290px;
+                padding: 15px 2px;
+               .card__pic{
+                height: 45vh;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+               }
+            }
+            .sneakers__info{
+                h4{
+                    margin-left: 20px;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                .card__row{
+                    width: 300px;
+                    justify-content: space-around;
+                    .price__sneakers{
+                        font-size: 15px;
+                        line-height: 20px;
+                        margin-left: 20px;
+                    }
+                    .btn{
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 40px;
+                    }
+                }
+            }
+            .card__add{
+                bottom: -65px;
+                
+                p{
+                    font-size: 100px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1050px){
+    .Sneakers{
+        .sneakers__row{
+            .card__sneakers{
+                width: 270px;
+                padding: 15px 1px;
+               .card__pic{
+                height: 45vh;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+               }
+            }
+            .sneakers__info{
+                h4{
+                    margin-left: 20px;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                .card__row{
+                    width: 300px;
+                    justify-content: space-around;
+                    .price__sneakers{
+                        font-size: 15px;
+                        line-height: 20px;
+                        margin-left: 20px;
+                    }
+                    .btn{
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 40px;
+                    }
+                }
+            }
+            .card__add{
+                bottom: -65px;
+                
+                p{
+                    font-size: 100px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:957px){
+    .Sneakers{
+        height: 110vh;
+        .sneakers__row{
+            flex-direction: column;
+
+            .card__sneakers{
+                width: 350px;
+                padding: 30px;
+               .card__pic{
+                height: 60vh;
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+               }
+            }
+            .sneakers__info{
+                h4{
+                    font-size: 25px;
+                    line-height: 47px;
+                }
+                .card__row{
+                    width: 300px;
+                    justify-content: space-between;
+                    .price__sneakers{
+                        font-size: 20px;
+                        line-height: 23px;
+                        
+                    }
+                    .btn{
+                        width: 49px;
+                        height: 49px;
+                    }
+                }
+            }
+            .card__add{
+                bottom: -70px;
+                position: absolute;
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+$black:#000;
+$white:#fff;
+$fontFam:'Montserrat';
+$fontWeight400:400;
+$fontWeight900:900;
+$fontItalic:italic;
+$fontNormal:normal;
+.Header{
+    width: 100%;
+    height: 35vh;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding-top: 50px;
+
+    .p__header{
+        font-size:30px;
+        line-height: 49px;
+        color: $black;
+        font-style: $fontNormal;
+        font-weight: $fontWeight400;
+        font-family: $fontFam;
+    }
+    h2{
+        color: $black;
+        font-family: $fontFam;
+        font-size: 60px;
+        line-height: 98px;
+        font-weight: $fontWeight900;
+        font-style: $fontItalic;
+    }
+}
+@media only screen and (max-width:729px){
+    .Header{
+        .p__header{
+            font-size: 20px;
+            line-height: 40px;
+        }
+        h2{
+            font-size: 45px;
+            line-height: 70px;
+        }
+    }
+}
+@media only screen and (max-width:569px){
+    .Header{
+        .p__header{
+            font-size: 15px;
+            line-height: 30px;
+        }
+        h2{
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+}
+@media only screen and (max-width:360px){
+    .Header{
+        .p__header{
+            font-size: 15px;
+            line-height: 30px;
+        }
+        h2{
+            font-size: 23px;
+            line-height: 30px;
+        }
+    }
+}
