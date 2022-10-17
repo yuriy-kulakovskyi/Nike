@@ -1,0 +1,18 @@
+.banner {
+  width: 100%; }
+  .banner__images {
+    width: 100%; }
+    .banner__images__image {
+      background-size: cover;
+      background-position: center; }
+    .banner__images .justDoIt {
+      height: 49px;
+      background-image: url("./img/justDoIt.webp"); }
+    .banner__images .bluredImg {
+      height: 700px;
+      background-image: url("./img/bluredBG.webp");
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+/*# sourceMappingURL=Banner.css.map */

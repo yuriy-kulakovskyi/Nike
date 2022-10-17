@@ -1,0 +1,25 @@
+@import 'mixins';
+
+.banner {
+  width: 100%;
+
+  &__images {
+    width: 100%;
+
+    &__image {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .justDoIt {
+      height: 49px;
+      background-image: url('./img/justDoIt.webp');
+    }
+
+    .bluredImg {
+      height: 700px;
+      background-image: url('./img/bluredBG.webp');
+      @include flexCenter();
+    }
+  }
+}

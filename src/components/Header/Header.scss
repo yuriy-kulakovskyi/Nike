@@ -1,0 +1,118 @@
+@import 'mixins';
+
+.header {
+  width: 100%; height: 79px;
+  @include flexCenter();
+
+  &__wrap {
+    @include flexSpaceBetween();
+
+    &__burger-btn {
+      display: none;
+      cursor: pointer;
+    }
+
+    &__nav-links {
+      ul {
+        list-style-type: none;
+        @include flexCenter();
+        gap: 50px;
+
+        li {
+          a {
+            text-decoration: none;
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 20px;
+            color: #000000;
+            text-transform: uppercase;
+            transition: all .1s;
+
+            .underline {
+              width: 100%; height: 2px;
+              background-color: #000;
+              display: none;
+              position: relative;
+              top: 11px;
+            }
+
+            &:hover {
+              font-weight: 700;
+              color: #000000;
+
+              .underline {
+                display: block;
+              }
+            }
+          }
+
+          .active {
+            font-weight: 700;
+            color: #000000;
+
+            .underline {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    &__logo {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 32px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #000;
+
+      .grey {
+        color: #A0A0A0;
+        font-weight: 400;
+      }
+    }
+
+    &__account-buttons {
+      @include flexCenter();
+      gap: 50px;
+
+      &__button {
+        svg {
+          width: 100%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 870px) {
+    &__wrap {
+      padding: 0 20px;
+
+      &__burger-btn {
+        display: block;
+      }
+
+      &__nav-links {
+        display: none;
+      }
+
+      &__account-buttons {
+        &__button {
+          &:nth-child(1),
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 515px) {
+    &__wrap {
+      &__logo {
+        font-size: 20px;
+      }
+    }
+  }
+}

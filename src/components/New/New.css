@@ -1,0 +1,94 @@
+.newGoods {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .newGoods__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .newGoods__wrap__good {
+      width: 602px;
+      height: 272px;
+      background: #EFEFEF;
+      box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
+      border-radius: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      top: -50px; }
+      .newGoods__wrap__good__content {
+        padding: 60px 66px;
+        width: 100%;
+        position: relative; }
+        .newGoods__wrap__good__content__heading {
+          font-family: 'Montserrat';
+          font-style: italic;
+          font-weight: 700;
+          font-size: 48px;
+          color: #FF3939;
+          text-transform: uppercase; }
+        .newGoods__wrap__good__content__paragraph {
+          font-family: 'Montserrat';
+          font-weight: 400;
+          font-size: 20px;
+          letter-spacing: 0.01em;
+          color: #000000;
+          margin-top: 10px; }
+        .newGoods__wrap__good__content__arrow-btn {
+          width: 55px;
+          height: 55px;
+          background-color: #fff;
+          border-radius: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          margin-top: 15px;
+          transition: all .6s ease-in-out; }
+          .newGoods__wrap__good__content__arrow-btn:hover {
+            box-shadow: 0 0 5px #333; }
+      .newGoods__wrap__good__image {
+        position: absolute;
+        right: 0;
+        transition: all .6s ease-in-out;
+        cursor: pointer; }
+        .newGoods__wrap__good__image:hover {
+          transform: rotate(25deg); }
+      .newGoods__wrap__good .nikeAir {
+        width: 410px;
+        height: 350px; }
+      .newGoods__wrap__good .nikeRed {
+        width: 356px;
+        height: 290px; }
+  @media (max-width: 1208px) {
+    .newGoods {
+      height: 700px; }
+      .newGoods__wrap {
+        height: 100%;
+        flex-direction: column; } }
+  @media (max-width: 630px) {
+    .newGoods {
+      height: 450px; }
+      .newGoods__wrap__good {
+        width: 302px;
+        height: 190px; }
+        .newGoods__wrap__good__content {
+          padding: 10px; }
+          .newGoods__wrap__good__content__heading {
+            font-size: 16px; }
+          .newGoods__wrap__good__content__paragraph {
+            font-size: 12px; }
+          .newGoods__wrap__good__content__arrow-btn {
+            width: 30px;
+            height: 30px; }
+            .newGoods__wrap__good__content__arrow-btn svg {
+              width: 10px;
+              height: 10px; }
+        .newGoods__wrap__good .nikeAir,
+        .newGoods__wrap__good .nikeRed {
+          width: 200px;
+          height: 150px; } }
+
+/*# sourceMappingURL=New.css.map */

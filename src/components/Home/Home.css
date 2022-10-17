@@ -1,0 +1,83 @@
+.home {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/home.webp");
+  background-size: cover; }
+  .home__mobile {
+    display: none; }
+  .home__wrap {
+    height: 100%; }
+    .home__wrap__content {
+      max-width: 559px; }
+      .home__wrap__content__title {
+        color: #fff;
+        font-style: italic;
+        font-family: "Montserrat";
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 40px; }
+      .home__wrap__content__subtitle {
+        color: #fff;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 30px; }
+      .home__wrap__content__button {
+        background-color: #fff;
+        border-radius: 16px;
+        border: none;
+        padding: 10px 25px;
+        margin-top: 30px;
+        cursor: pointer;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all .3s ease-in-out; }
+        .home__wrap__content__button:hover {
+          opacity: .6; }
+  @media (max-width: 711px) {
+    .home {
+      background-image: none; }
+      .home__wrap {
+        display: none; }
+      .home__mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; }
+        .home__mobile__background {
+          width: 100%; }
+        .home__mobile__content {
+          width: 100%;
+          min-height: 300px;
+          background-image: url("./img/mobileContent.webp");
+          background-size: cover;
+          padding: 16px 20px; }
+          .home__mobile__content__title {
+            font-family: 'Montserrat';
+            font-style: italic;
+            font-weight: 900;
+            font-size: 30px;
+            color: #FFFFFF;
+            text-transform: uppercase; }
+          .home__mobile__content__subtitle {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 20px;
+            color: #FFFFFF;
+            margin-top: 12px; } }
+  @media (max-width: 515px) {
+    .home__mobile__content {
+      background-position: center; }
+      .home__mobile__content__title {
+        font-size: 20px; }
+      .home__mobile__content__subtitle {
+        font-size: 13px; } }
+
+/*# sourceMappingURL=Home.css.map */

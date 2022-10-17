@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__wrap__burger-btn {
+      display: none;
+      cursor: pointer; }
+    .header__wrap__nav-links ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px; }
+      .header__wrap__nav-links ul li a {
+        text-decoration: none;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 20px;
+        color: #000000;
+        text-transform: uppercase;
+        transition: all .1s; }
+        .header__wrap__nav-links ul li a .underline {
+          width: 100%;
+          height: 2px;
+          background-color: #000;
+          display: none;
+          position: relative;
+          top: 11px; }
+        .header__wrap__nav-links ul li a:hover {
+          font-weight: 700;
+          color: #000000; }
+          .header__wrap__nav-links ul li a:hover .underline {
+            display: block; }
+      .header__wrap__nav-links ul li .active {
+        font-weight: 700;
+        color: #000000; }
+        .header__wrap__nav-links ul li .active .underline {
+          display: block; }
+    .header__wrap__logo {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 32px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #000; }
+      .header__wrap__logo .grey {
+        color: #A0A0A0;
+        font-weight: 400; }
+    .header__wrap__account-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px; }
+      .header__wrap__account-buttons__button svg {
+        width: 100%;
+        cursor: pointer; }
+  @media (max-width: 870px) {
+    .header__wrap {
+      padding: 0 20px; }
+      .header__wrap__burger-btn {
+        display: block; }
+      .header__wrap__nav-links {
+        display: none; }
+      .header__wrap__account-buttons__button:nth-child(1), .header__wrap__account-buttons__button:nth-child(2) {
+        display: none; } }
+  @media (max-width: 515px) {
+    .header__wrap__logo {
+      font-size: 20px; } }
+
+/*# sourceMappingURL=Header.css.map */
