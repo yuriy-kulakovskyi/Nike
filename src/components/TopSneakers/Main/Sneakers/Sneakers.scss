@@ -7,6 +7,7 @@ $fontWeight900:900;
 $fontNormal:normal;
 $white:#fff;
 $fontItalic:italic;
+$darkgrey:#C6C6C6;
 .Sneakers{
     margin-top: 35px;
     width: 100%;
@@ -27,8 +28,12 @@ $fontItalic:italic;
             background-color: $lightgrey;
             box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.25);
             border-radius: 18px;
+            &:hover{
+                background-color: $darkgrey;
+                transition: 0.3s;
+                cursor: pointer;
+            }
             .card__main{
-                z-index: 4;
                 .card__pic{
                     display: flex;
                     align-items: center;
@@ -38,6 +43,11 @@ $fontItalic:italic;
                         width: 300px;
                         height: 300px;
                         filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.3));
+                        transition: 1s;
+                        &:hover{
+                            transform: rotate(-10deg);
+                            transition: 1s;
+                        }
                         
                     }
                     
@@ -74,24 +84,17 @@ $fontItalic:italic;
                             justify-content: center;
                             background-color: $white;
                             border-radius: 50%;
+                            &:hover{
+                                background-color: darkgrey;
+                                transition: 0.2s;
+                                cursor: pointer;
+                            }
                         }
                     }
             }
         
             }
-            .card__add{
-                bottom: -70px;
-                position: absolute;
-                p{
-
-                    transform: matrix(0, 1, -1, 0, 0, 0);
-                    font-family: $fontFam;
-                    font-weight: $fontWeight900;
-                    font-size: 120px;
-                    color: rgba(0, 0, 0, 0.1);
-                    font-style: $fontItalic;
-                }
-            }
+            
         }
     }
 }
@@ -128,13 +131,7 @@ $fontItalic:italic;
                     }
                 }
             }
-            .card__add{
-                bottom: -65px;
-                
-                p{
-                    font-size: 100px;
-                }
-            }
+            
         }
     }
 }
@@ -173,13 +170,7 @@ $fontItalic:italic;
                     }
                 }
             }
-            .card__add{
-                bottom: -65px;
-                
-                p{
-                    font-size: 100px;
-                }
-            }
+            
         }
     }
 }
@@ -218,13 +209,7 @@ $fontItalic:italic;
                     }
                 }
             }
-            .card__add{
-                bottom: -65px;
-                
-                p{
-                    font-size: 100px;
-                }
-            }
+        
         }
     }
 }
@@ -264,13 +249,7 @@ $fontItalic:italic;
                     }
                 }
             }
-            .card__add{
-                bottom: -70px;
-                position: absolute;
-                p{
-                    font-size: 10px;
-                }
-            }
+            
         }
     }
 }

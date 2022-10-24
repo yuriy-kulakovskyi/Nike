@@ -40,15 +40,25 @@ $fontNormal:normal;
                 background-color: $grey;
                 border-radius: 50%;
                 margin-right: 20px;
+                cursor: pointer;
+                &:hover{
+                    background-color: $darkgrey;
+                    transition: 0.1s;
+                }
             }
             .right__btn{
                 display: flex;
+                cursor:pointer;
                 align-items: center;
                 justify-content: center;
                 width: 40px;
                 height: 40px;
                 background-color: $darkgrey;
                 border-radius: 50%;
+                &:hover{
+                    background-color: $grey;
+                    transition: 0.1s;
+                }
             }
         }
     }
@@ -60,7 +70,7 @@ $fontNormal:normal;
 }
 @media only screen and (max-width:957px) {
     .Main{
-        height:190vh;
+        height:200vh;
             .sneakers__container{
                 flex-direction: column;
             }
