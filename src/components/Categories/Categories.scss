@@ -43,6 +43,11 @@ $fontWeight700:700;
                     font-size: 36px;
                     line-height: 44px;
                     letter-spacing: 0.3em;
+                    &:hover{
+                        color:#FF3939;
+                        transition: 0.3s;
+                        cursor: pointer;
+                    }
                 }
             }
             .category__pic{

@@ -21,9 +21,7 @@ function Sneakers(props){
                     </div>
                     </div>
                     </div>  
-                    <div className="card__add">
-                        <p>NIKE</p>
-                    </div>
+                
 
                 </div>
             </div>

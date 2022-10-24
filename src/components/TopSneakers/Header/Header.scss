@@ -30,6 +30,11 @@ $fontNormal:normal;
         line-height: 98px;
         font-weight: $fontWeight900;
         font-style: $fontItalic;
+        &:hover{
+            color:#FF3939;
+            transition: 0.1s;
+            cursor: pointer;
+        }
     }
 }
 @media only screen and (max-width:729px){
